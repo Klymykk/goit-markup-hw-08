@@ -6,8 +6,18 @@
 
 .footer__container{
     display: flex;
-    gap: 94px;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
     align-items: baseline;
+    flex-wrap: wrap;
+    text-align: center;
+    @media screen and (min-width:1200px){
+        text-align: left;
+        flex-wrap: nowrap;
+        gap: 94px;
+    }
+    
 }
 
 .address__item:not(:last-child) {
@@ -78,11 +88,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    flex-direction:column;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media screen and (min-width:1200px){
+        gap: 12px;
+        flex-direction:row;
+    }
 }
 
 .subscription__input{
-    width: 352px;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -92,6 +108,9 @@
     background-color: transparent;
     font-size: 16px;
     outline: transparent;
+    @media screen and (min-width:1200px){
+        width: 352px;
+    }
 } 
 .subscription__ikon{
     fill: var(--dark-background-text-color);

@@ -1,10 +1,14 @@
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--logo-header-color);
+    @media screen and (min-width:1200px){
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 .logo--color{
     color: var(--accent-color);
@@ -12,7 +16,12 @@
 
 .header__logo{
     color: var(--logo-header-color);
-    margin-right: 94px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 88px;
+    @media screen and (min-width:1200px){
+        margin-right: 94px;
+    }
 }
 
 .footer__logo{

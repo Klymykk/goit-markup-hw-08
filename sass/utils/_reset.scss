@@ -20,7 +20,7 @@ address{
 
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -28,6 +28,12 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--primari-background-color);
+}
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .list{
