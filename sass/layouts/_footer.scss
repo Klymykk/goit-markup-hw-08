@@ -8,7 +8,7 @@
     display: flex;
     gap: 60px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
     text-align: center;
@@ -98,7 +98,7 @@
 }
 
 .subscription__input{
-    width: 450px;
+    width: 290px;
     height: 50px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -108,6 +108,9 @@
     background-color: transparent;
     font-size: 16px;
     outline: transparent;
+    @media screen and (min-width:480px){
+        width: 450px;
+    }
     @media screen and (min-width:1200px){
         width: 352px;
     }

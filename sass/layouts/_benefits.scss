@@ -50,10 +50,6 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    text-align: center;
+    text-align: left;
     color: var(--primary-text-color);
-
-    @media screen and (min-width:768px){
-        text-align: left;
-    }
 }
